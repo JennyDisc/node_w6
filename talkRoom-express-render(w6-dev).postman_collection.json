@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "c35b6865-768b-42cf-b757-ed5fa04390bb",
+		"name": "talkRoom-express-render(w6-dev)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29835428"
+	},
+	"item": [
+		{
+			"name": "GET取得user個人資料",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDM5ZTliYWY0ODg2ZmM0MTkzMzJjNyIsImlhdCI6MTcxNTcwNzU0NywiZXhwIjoxNzE2MzEyMzQ3fQ.-7hDOwQMCFQbmeO8z0iQ4msxve3FSftxrBUohUg0P00",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://node-w6-2.onrender.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"node-w6-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST註冊user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"aaa111\",\r\n    \"email\":\"1@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-w6-2.onrender.com/users/sign_up",
+					"protocol": "https",
+					"host": [
+						"node-w6-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST登入user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer $2a$12$cpZnlAcaYEmNuH7h34Ip/.wv8ikjg8Q59WAv9MNXXe5Px9ht5Zk6S",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"123@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-w6-2.onrender.com/users/sign_in",
+					"protocol": "https",
+					"host": [
+						"node-w6-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST重設user密碼",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDM5ZTliYWY0ODg2ZmM0MTkzMzJjNyIsImlhdCI6MTcxNTczODM0NywiZXhwIjoxNzE2MzQzMTQ3fQ.5y97xgPrasAy6cCaes-KTmN7yVMHtF0-IHZIu9bKu0M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"23456789\",\r\n    \"confirmPassword\":\"23456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-w6-2.onrender.com/users/updatePassword",
+					"protocol": "https",
+					"host": [
+						"node-w6-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH更新user個人資料",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDQ3ZGVjMWVhMjRiNDhlNzRiZDE0ZSIsImlhdCI6MTcxNTc2NDcxNiwiZXhwIjoxNzE2MzY5NTE2fQ.ZCushhqFzEqzFQBnDGi6oXLXBowVkKOvRO1Q-EIsrM4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"photo\":\"www.@phtot.com.tw\",\r\n    \"name\":\"a11\",\r\n    \"sex\":\"female\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-w6-2.onrender.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"node-w6-2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

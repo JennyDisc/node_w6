@@ -36,20 +36,12 @@ const userSchema = new mongoose.Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-        },
-        updatedAt: {
-            type: Date,
-            // default: Date.now,
-            default: () => moment().tz("Asia/Taipei").toDate(),
-            get: v => moment(v).format('YYYY-MM-DD HH:mm:ss')
         }
     },
     {
         versionKey: false,
     }
 );
-
-userSchema.set('toJSON', { getters: true });
 
 // 建立 model
 const User = mongoose.model('user', userSchema);
