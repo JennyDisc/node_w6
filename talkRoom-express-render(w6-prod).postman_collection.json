@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDM5ZTliYWY0ODg2ZmM0MTkzMzJjNyIsImlhdCI6MTcxNTcwNzU0NywiZXhwIjoxNzE2MzEyMzQ3fQ.-7hDOwQMCFQbmeO8z0iQ4msxve3FSftxrBUohUg0P00",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDc4MDBjNGM2MjdlNDk5OWY1OTI5YyIsImlhdCI6MTcxNTk2MTg2OCwiZXhwIjoxNzE2NTY2NjY4fQ.MWyhQUuSFresCX38quAYHPWVDA6nvQRal3lvnKaHgOs",
 						"type": "text"
 					}
 				],
@@ -67,14 +67,7 @@
 			"name": "POST登入user",
 			"request": {
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer $2a$12$cpZnlAcaYEmNuH7h34Ip/.wv8ikjg8Q59WAv9MNXXe5Px9ht5Zk6S",
-						"type": "text",
-						"disabled": true
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"email\":\"123@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
@@ -107,7 +100,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDM5ZTliYWY0ODg2ZmM0MTkzMzJjNyIsImlhdCI6MTcxNTczODM0NywiZXhwIjoxNzE2MzQzMTQ3fQ.5y97xgPrasAy6cCaes-KTmN7yVMHtF0-IHZIu9bKu0M",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDc4MDBjNGM2MjdlNDk5OWY1OTI5YyIsImlhdCI6MTcxNTk2MTg2OCwiZXhwIjoxNzE2NTY2NjY4fQ.MWyhQUuSFresCX38quAYHPWVDA6nvQRal3lvnKaHgOs",
 						"type": "text"
 					}
 				],
@@ -143,7 +136,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDQ3ZGVjMWVhMjRiNDhlNzRiZDE0ZSIsImlhdCI6MTcxNTc2NDcxNiwiZXhwIjoxNzE2MzY5NTE2fQ.ZCushhqFzEqzFQBnDGi6oXLXBowVkKOvRO1Q-EIsrM4",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NDc4MDBjNGM2MjdlNDk5OWY1OTI5YyIsImlhdCI6MTcxNTk2MTg2OCwiZXhwIjoxNzE2NTY2NjY4fQ.MWyhQUuSFresCX38quAYHPWVDA6nvQRal3lvnKaHgOs",
 						"type": "text"
 					}
 				],
