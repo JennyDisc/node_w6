@@ -12,7 +12,6 @@ const DB = process.env.DATABASE.replace(
 );
 
 // 連接 mongodb 的 DB 這個資料庫
-// mongoose.connect(DB)
 mongoose.connect(DB)
     .then(() => {
         console.log('資料庫連線成功')
